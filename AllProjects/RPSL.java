@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class RPS {
+public class RPSL {
 
     public static void main(String[] args) {
 
