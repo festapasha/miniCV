@@ -125,3 +125,99 @@ footer {
     margin-top: 30px;
     color: #777;
 }
+
+
+
+/* ==========================================================
+   RESPONSIVE - TABLET (760px – 1023px)
+   Certificates stay in pairs of 2, everything scales down
+   so the pair fits inside the narrower frame.
+   ========================================================== */
+@media (max-width: 1023px) {
+  body {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.7em;
+  }
+
+  .profile-photo {
+    width: 280px;
+    height: 200px;
+  }
+
+  section {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .cert-grid {
+    gap: 20px;
+  }
+
+  .cert-item {
+    max-width: none; /* let the 2-column grid track set the width now */
+    padding: 10px;
+  }
+
+  .cert-item img {
+    height: 150px;
+  }
+}
+
+
+/* ==========================================================
+   RESPONSIVE - PHONES (320px – 759px)
+   Certificates drop to a single column, stacked one under
+   the other. Everything stays centered as it shrinks.
+   ========================================================== */
+@media (max-width: 759px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 15px 0;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+  }
+
+  .profile-photo {
+    width: 220px;
+    height: 170px;
+  }
+
+  section {
+    max-width: 100%;
+    padding: 15px 12px;
+    text-align: center;
+  }
+
+  .about-me p {
+    text-align: center;
+  }
+
+  .previous-projects ul,
+  .skills ul {
+    list-style-position: inside;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cert-item {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .cert-item img {
+    height: 180px;
+  }
+}
